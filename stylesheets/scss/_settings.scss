@@ -1,0 +1,50 @@
+/* 
+
+Settings file voor EGrid
+@author Tom van Oorschot
+
+Verander onderstaande variabelen voor de nodige aanpassingen in het template
+
+*/
+
+//Verander onderstaande waarde in false om het theme niet responsive te maken
+$responsive: false;
+
+//Body
+$body-margin: 10px;
+$body-padding: 10px;
+$body-background-color: white;
+
+//Grid
+$width: 960px;
+$columnpadding: 5px;
+
+//Typography
+$fontfamily: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$fontsize: 14px;
+$line-height: 20px;
+
+//Kleuren
+$color: #333;
+$a-color: #CC0000;
+$a-hover: $a-color;
+$black: #000;
+$white: #fff;
+
+
+//headers
+$base-header-size: 40px;
+$header-color: black;
+$header-fontfamily: $fontfamily;
+
+//Formulieren
+$inputshadow: #333;
+$inputshadow-alpha: 0.5;
+$inputborder-color: #ccc;
+$input-color: $color;
+
+//navbar
+$navBarHeight: 40px;
+$navFlyoutBaseWidth: 250px;
+
+

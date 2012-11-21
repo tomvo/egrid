@@ -1,0 +1,45 @@
+@mixin navbar($topLevelWidth, $lowerLevelWidth) {
+  ul { 
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+    z-index: 10;
+  }
+  a {
+    display: block;
+    width: $topLevelWidth;
+    line-height: 80px;
+  }
+  li {
+    float: left;
+    width: $topLevelWidth;
+    &:hover {
+      ul {
+        left:auto;
+
+          li {
+              float: none;
+              display: block;
+          }
+
+        ul {
+          left: -999em;
+        }
+      }
+    }
+    li:hover {
+      ul {
+        left: auto;
+      }
+    }
+    ul {
+      position: absolute;
+      width: $lowerLevelWidth;
+      left: -999em;
+      ul {
+        margin: -1em 0 0 $topLevelWidth;
+      }
+    }
+  }
+}

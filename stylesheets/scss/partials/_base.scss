@@ -1,0 +1,122 @@
+/**
+Base Styles voor EGrid
+
+@author Tom van Oorschot
+
+Most styles derived from the excellent Skeleton framework by Dave Gamache improved with variables from the settings file
+This file creates a basic style template after the reset styles have been loaded
+**/
+
+body {
+		background: $body-background-color;
+		padding: $body-padding;
+		padding: $body-margin;
+		font-size: $fontsize;
+		line-height: $line-height;
+		font-family: $fontfamily;
+		color: $color;
+		-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+		-webkit-text-size-adjust: 100%;
+ }
+
+
+h1, h2, h3, h4, h5, h6 {
+	color: $header-color;
+	font-family: $header-fontfamily;
+}
+	
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
+h1 { font-size: $base-header-size; line-height: $base-header-size + 4; margin-bottom: $base-header-size / 3;}
+h2 { font-size: 0.75 * $base-header-size; line-height: 0.9 * $base-header-size; margin-bottom: $base-header-size / 3; }
+h3 { font-size: 0.65 * $base-header-size; line-height: 0.75 * $base-header-size; margin-bottom: $base-header-size / 4; }
+h4 { font-size: 0.50 * $base-header-size; line-height: 0.65 * $base-header-size; margin-bottom: 4px; }
+h5 { font-size: 0.35 * $base-header-size; line-height: 0.5 * $base-header-size; }
+h6 { font-size: 0.3 * $base-header-size; line-height: 0.4 * $base-header-size; }
+
+//tekst elementen
+em { font-style: italic; }
+strong { font-weight: bold; color: inherit; }
+small { font-size: 80%; }
+
+//Blockquotes
+blockquote, blockquote p { font-size: 17px; line-height: 24px; color: #777; font-style: italic; }
+blockquote { margin: 0 0 20px; padding: 9px 20px 0 19px; border-left: 1px solid #ddd; }
+blockquote cite { display: block; font-size: 12px; color: #555; }
+blockquote cite:before { content: "\2014 \0020"; }
+blockquote cite a, blockquote cite a:visited, blockquote cite a:visited { color: #555; }
+
+hr { border: solid #ddd; border-width: 1px 0 0; clear: both; margin: 10px 0 30px; height: 0; }
+
+//Links
+a, a:visited { color: $a-color; text-decoration: underline; outline: 0;} 
+a:hover, a:focus  { color: $a-hover; text-decoration: none; } 
+p a, p a:visited { line-height: inherit; }
+
+//Lists
+ul, ol { margin-top: 10px; margin-bottom: 20px; list-style: disc outside;}
+ol { list-style: decimal; }
+ol, ul.square, ul.circle, ul.disc { margin-left: 30px; }
+
+li { line-height: inherit;  }
+
+//Images
+p img { margin: 0; }
+@if $responsive {
+	img {
+		max-width: 100%;
+		height: auto; }
+}
+
+//Forms
+form {
+	margin-bottom: 20px; }
+fieldset {
+	margin-bottom: 20px; }
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea,
+select {
+	border: 1px solid $inputborder-color;
+	padding: 6px 4px;
+	outline: none;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	font: 13px inherit;
+	color: $input-color;
+	margin: 0;
+	width: 210px;
+	max-width: 100%;
+	display: block;
+	margin-bottom: 20px;
+	background: #fff; }
+select {
+	padding: 0; }
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+	border: 1px solid #aaa;
+		color: #444;
+		-moz-box-shadow: 0 0 3px rgba($inputshadow, $inputshadow-alpha);
+	-webkit-box-shadow: 0 0 3px rgba($inputshadow, $inputshadow-alpha);
+	box-shadow:  0 0 3px rgba($inputshadow, $inputshadow-alpha); }
+textarea {
+	min-height: 60px; }
+label,
+legend {
+	display: block;
+	font-weight: bold;
+	font-size: 13px;  }
+select {
+	width: 220px; }
+input[type="checkbox"] {
+	display: inline; }
+label span,
+legend span {
+	font-weight: normal;
+	font-size: 13px;
+	color: #444; }
+
+
