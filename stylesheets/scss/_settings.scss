@@ -8,7 +8,7 @@ Verander onderstaande variabelen voor de nodige aanpassingen in het template
 */
 
 //Verander onderstaande waarde in false om het theme niet responsive te maken
-$responsive: false;
+$responsive: true;
 
 //Body
 $body-margin: 10px;
@@ -28,9 +28,6 @@ $line-height: 20px;
 $color: #333;
 $a-color: #CC0000;
 $a-hover: $a-color;
-$black: #000;
-$white: #fff;
-
 
 //headers
 $base-header-size: 40px;
@@ -42,9 +39,3 @@ $inputshadow: #333;
 $inputshadow-alpha: 0.5;
 $inputborder-color: #ccc;
 $input-color: $color;
-
-//navbar
-$navBarHeight: 40px;
-$navFlyoutBaseWidth: 250px;
-
-
