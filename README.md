@@ -10,7 +10,7 @@ The settings file includes the most common settings for the grid and allow flexi
 
 Change to false to disable the responsiveness of the grid
 
-    $responsive: false;
+    $responsive: true;
 
 The default margin and padding of the document as well as the color of the body background
 
