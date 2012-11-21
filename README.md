@@ -1,9 +1,9 @@
 egrid
 =====
 
-egrid is a minimal sass css base grid based on foundation and skeleton.
+egrid is a minimal SASS base grid based on foundation and skeleton.
 
-It contains all of percentage goodness from Foundation combined with the simplicity of Skeleton with an on/off switch for a responsive or non-responsive grid.
+It contains all the percentage goodness from Foundation combined with the simplicity of Skeleton with an on/off switch for a responsive or non-responsive grid.
 
 The settings file includes the most common settings for the grid and allow flexibility. Below a description.
 
@@ -42,7 +42,7 @@ Settings for the headers, the header sizes for h1 to h6 will be calculated based
     $header-color: black;
     $header-fontfamily: $fontfamily;
 
-Form settings, these are basically variables for the originale Skeleton from styles
+Form settings, these are basically variables for the originale Skeleton form styles
 
     $inputshadow: #333;
     $inputshadow-alpha: 0.5;
